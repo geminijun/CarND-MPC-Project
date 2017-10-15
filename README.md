@@ -14,7 +14,7 @@ v[t+1]=vt+a[t]∗dt
 
 ## Timestep Length and Elapsed Duration
 
-I'm using the same setup as in the class. N=25 and dt=0.05. I also tried N=15 and dt=0.1, I didn't see much difference over there. I feel like the larger dt is, the car would be more unstable at a higher speed.
+First, I was using the same setup as in the class. N=25 and dt=0.05 and it worked pretty good. Then I tried N=15 and dt=0.1, I didn't see much difference excpet the vehicle is able to drive a little bit faster(~42mph t0 40mph). I think it's becasue N*dt is longer, so I tried N=30 and dt=0.05, it also works and the vehicle is able to be drving at ~44mph. N can't be too large becasue it will make computational time too long. And it also doesn't make sense to make N*dt too long as the environment will change a lot. If I set dt to 0.2, the car would have a bad control on the turn.
 
 ## Polynomial Fitting and MPC Preprocessing
 

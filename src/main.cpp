@@ -107,7 +107,7 @@ int main() {
 
           // deal with latency, calculate the state of 100ms later
           double latency = 0.1; // 100ms
-          double v_mps = v * 1600 / 3600;
+          double v_mps = v * 0.44704;
           double Lf = 2.67;
           px = px + v_mps * cos(psi) * latency;
           py = py + v_mps * sin(psi) * latency;
